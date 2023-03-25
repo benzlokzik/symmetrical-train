@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "symmetrical-train"
+version = "0.1.0"
+description = "testing django and poetry via VSCode in GH Codespaces"
+authors = ["benzlokzik"]
+readme = "README.md"
+packages = [{include = "symmetrical_train"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.1.7"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
