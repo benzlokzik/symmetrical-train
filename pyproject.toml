@@ -4,13 +4,16 @@ version = "0.1.0"
 description = "testing django and poetry via VSCode in GH Codespaces"
 authors = ["benzlokzik"]
 readme = "README.md"
-packages = [{include = "symmetrical_train"}]
+packages = [
+    { include = "symmetrical_train" }
+]
+
 
 [tool.poetry.dependencies]
 python = "^3.8.1"
-Django = "^4.1.7"
+django = "^4.1.7"
 
-[tool.poetry.group.dev.dependencies]
+[tool.poetry.dev-dependencies]
 black = "^23.1.0"
 flake8 = "==6.0.0"
 pyright = "^1.1.290"
@@ -19,6 +22,6 @@ pyright = "^1.1.290"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry.scripts]
-format = "black ."
-django_test = "poetry run python manage.py test"
+# [tool.poetry.scripts]
+# format = "black ."
+# django_test = "poetry run python manage.py test"
