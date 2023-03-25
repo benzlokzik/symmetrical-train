@@ -32,4 +32,4 @@ jobs:
         
     - name: Run Tests
       run: |
-        poetry run django_test
+        poetry run python manage.py test
