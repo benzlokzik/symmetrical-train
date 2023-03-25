@@ -13,6 +13,7 @@ Django = "^4.1.7"
 [tool.poetry.group.dev.dependencies]
 black = "^23.1.0"
 flake8 = "^6.0.0"
+pyright = "^1.1.291"
 
 [build-system]
 requires = ["poetry-core"]
