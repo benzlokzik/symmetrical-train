@@ -11,7 +11,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.8.1"
-django = "^4.1.10"
+django = "^4.1.13"
 
 [tool.poetry.dev-dependencies]
 black = "^23.1.0"
